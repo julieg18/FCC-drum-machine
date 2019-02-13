@@ -1,49 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <body id="drum-machine">
   <head>
     <script src="javascript.js"></script>
     <link href="styles.css" rel="stylesheet" />
   </head>
   
+  <body id="drum-machine">
+    <h1>Drum Machine</h1>
+    <p id="keyString"></p>
     <div id="display">
-      <div class="drum-pad" id="Q-btn" >
+      <div class="drum-pad" id="Q-btn" onclick="playAudio('qKey'); print('qKey')">
         <p>Q</p>
         <audio class="clip" id="Q" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"></audio>
       </div>
-      <div class="drum-pad" id="W-btn">
+      <div class="drum-pad" id="W-btn" onclick="playAudio('wKey'); print('wKey')">
         <p>W</p>
         <audio class="clip" id="W" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3"></audio>
       </div>
-      <div class="drum-pad" id="E-btn">
+      <div class="drum-pad" id="E-btn" onclick="playAudio('eKey'); print('eKey')">
         <p>E</p>
         <audio class="clip" id="E" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3"></audio>
       </div>
-      <div class="drum-pad" id="A-btn">
+      <div class="drum-pad" id="A-btn" onclick="playAudio('aKey'); print('aKey')">
         <p>A</p>
         <audio class="clip" id="A" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3"></audio>
       </div>
-      <div class="drum-pad" id="S-btn">
+      <div class="drum-pad" id="S-btn" onclick="playAudio('sKey'); print('sKey')">
         <p>S</p>
         <audio class="clip" id="S" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3"></audio>
       </div>
-      <div class="drum-pad" id="D-btn">
+      <div class="drum-pad" id="D-btn" onclick="playAudio('dKey'); print('dKey')">
         <p>D</p>
         <audio class="clip" id="D" src="https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3"></audio>
       </div>
-      <div class="drum-pad" id="Z-btn">
+      <div class="drum-pad" id="Z-btn" onclick="playAudio('zKey'); print('zKey')">
         <p>Z</p>
         <audio class="clip" id="Z" src="https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3"></audio>
       </div>
-      <div class="drum-pad" id="X-btn">
+      <div class="drum-pad" id="X-btn" onclick="playAudio('xKey'); print('xKey')">
         <p>X</p>
         <audio class="clip" id="X" src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3"></audio>
       </div>
-      <div class="drum-pad" id="C-btn">
+      <div class="drum-pad" id="C-btn" onclick="playAudio('cKey'); print('cKey')">
         <p>C</p>
         <audio class="clip" id="C" src="https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3"></audio>
       </div>
     </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </html>
   </body>
-</html>
