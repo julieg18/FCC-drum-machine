@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="javascript.js"></script>
     <link href="styles.css" rel="stylesheet" />
   </head>
   
   <body id="drum-machine">
     <h1>Drum Machine</h1>
-    <p id="keyString"></p>
     <div id="display">
+      <p id="keyString"></p>
       <div class="drum-pad" id="Q-btn" onclick="playAudio('qKey'); print('qKey')">
-        <p>Q</p>
+          <p>Q</p>
         <audio class="clip" id="Q" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"></audio>
       </div>
       <div class="drum-pad" id="W-btn" onclick="playAudio('wKey'); print('wKey')">
-        <p>W</p>
+          <p>W</p>
         <audio class="clip" id="W" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3"></audio>
       </div>
       <div class="drum-pad" id="E-btn" onclick="playAudio('eKey'); print('eKey')">
@@ -48,4 +47,6 @@
     </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </html>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="javascript.js"></script>
   </body>
