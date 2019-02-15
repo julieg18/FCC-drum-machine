@@ -85,7 +85,7 @@ function print(key) {
       document.getElementById("keyString").innerHTML = "Heater 2"
       break;
     case "eKey":
-      document.getElementById("keyString").innerHTML = "Heater 3."
+      document.getElementById("keyString").innerHTML = "Heater 3"
       break;
     case "aKey":
       document.getElementById("keyString").innerHTML = "Heater 4"
