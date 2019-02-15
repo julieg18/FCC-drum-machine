@@ -1,3 +1,40 @@
-body {
+html {
   text-align: center;
+  background-color: black;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
 }
+
+#display {
+  display: grid;
+  margin-right: 25%;
+  margin-left: 25%;
+  grid-template: repeat(4, 1fr) / repeat(3, 1fr); 
+  grid-template-areas: "head head head" "Q W E" "A S D" "Z X C";
+  grid-gap: 10px 10px;
+  border: solid #00BC00;
+  padding: 1%;
+}
+
+#print-area {
+  grid-area: head;
+  border:  solid #00BC00;
+}
+
+.drum-pad {
+  background-color: #00BC00;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0 5px #575454;
+}
+
+.drum-pad:hover {
+  background-color: #006600;
+}
+
+.drum-pad:active {
+  box-shadow: 0 1px #575454;
+  margin-top: 3px;
+}
+
+
