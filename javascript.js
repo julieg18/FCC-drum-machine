@@ -1,7 +1,6 @@
 
 
 $(document).ready(function() {
-  $("h1").css("color", "yellow");
   $(document).keydown( function(pressedKey) {
     let keyCode = pressedKey.keyCode;
     switch(keyCode) {
