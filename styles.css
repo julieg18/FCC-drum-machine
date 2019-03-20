@@ -5,6 +5,14 @@ html {
   font-family: 'Roboto Mono', monospace;
 }
 
+a {
+  color: #ffffff;
+}
+
+#heading {
+  padding-bottom: 50px;
+}
+
 #display {
   display: grid;
   margin-right: 25%;
