@@ -1,48 +1,78 @@
-html {
+:root {
+  --btn-color-one: #5ad2f4;
+  --btn-color-two: #f6ae2d;
+  --btn-color-three: #F26419;
+}
+
+body {
+  height: 600px;
   text-align: center;
-  background-color: black;
-  color: white;
+  background-color: #52b788;
+  color: #fff;
   font-family: 'Roboto Mono', monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 a {
-  color: #ffffff;
-}
-
-#heading {
-  padding-bottom: 50px;
+  color: #fff;
 }
 
 #display {
+  width: 400px;
+  height: 400px;
   display: grid;
-  margin-right: 25%;
-  margin-left: 25%;
   grid-template: repeat(4, 1fr) / repeat(3, 1fr); 
   grid-template-areas: "head head head" "Q W E" "A S D" "Z X C";
   grid-gap: 10px 10px;
-  border: solid #00BC00;
-  padding: 1%;
+  background-color: #424242;
+  padding: 10px;
 }
 
 #print-area {
   grid-area: head;
-  border:  solid #00BC00;
+}
+
+#key-string {
+  font-size: 1.5rem;
 }
 
 .drum-pad {
-  background-color: #00BC00;
-  border-radius: 15px;
-  cursor: pointer;
-  box-shadow: 0 5px #575454;
+  color: #000;
+  border-radius: 10px;
 }
 
 .drum-pad:hover {
-  background-color: #006600;
+  cursor: pointer;
 }
 
-.drum-pad:active {
-  box-shadow: 0 1px #575454;
-  margin-top: 3px;
+#W-btn:active, #Q-btn:active, #E-btn:active {
+  background-color: var(--btn-color-one);
 }
 
+#A-btn:active, #S-btn:active, #D-btn:active {
+  background-color: var(--btn-color-two);
+}
+
+#Z-btn:active, #X-btn:active, #C-btn:active {
+  background-color: var(--btn-color-three);
+}
+
+.add-blue-bkr {
+  background-color: var(--btn-color-one);
+}
+
+.add-yellow-bkr {
+  background-color: var(--btn-color-two);
+}
+
+.add-orange-bkr {
+  background-color: var(--btn-color-three);
+}
+
+.remove-bkr {
+  background-color: #ddd;
+}
 
