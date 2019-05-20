@@ -28,15 +28,15 @@ $(document).ready(function() {
       break;
       case (90):
       $('#Z-btn').click()
-      changeBkrColor('red', 'Z')
+      changeBkrColor('orange', 'Z')
       break;
       case (88):
       $('#X-btn').click()
-      changeBkrColor('red', 'X')
+      changeBkrColor('orange', 'X')
       break;
       case (67):
       $('#C-btn').click()
-      changeBkrColor('red', 'C')
+      changeBkrColor('orange', 'C')
       break;
     }
   });
@@ -48,7 +48,7 @@ function playAudio (key) {
 }
 
 function printPhrase (phrase) {
-  $('#keyString').html(`<p>${phrase}</p>`)
+  $('#key-string').html(`<p>${phrase}</p>`)
 }
 
 function changeBkrColor (color, letter) {
