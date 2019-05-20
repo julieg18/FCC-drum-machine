@@ -31,10 +31,6 @@ a {
   padding: 10px;
 }
 
-button {
-  background-color: #ddd;
-}
-
 #print-area {
   grid-area: head;
 }
